@@ -36,4 +36,9 @@ public class GitHubRepository {
     private boolean web_commit_signoff_required;
     private String visibility;
     private String default_branch;
+    private String master_branch;
+    private int forks;
+    private int open_issues;
+    private int watchers;
+    private int stargazers;
 }

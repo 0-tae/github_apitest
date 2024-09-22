@@ -10,8 +10,17 @@ public class GitHubRequestReceiverService {
 
     public void gitHubUserSave(GitHubUser dto){
 
+//        Salt newSalt =saltRepository.save(
+//                Salt.builder()
+//                        .salt(Salt.initSalt())
+//                        .userId(dto.getId()).build());
+
+        String dirName = "0tae";
+                // newSalt.getEncrypt(dto.getId()+dto.getNode_id());
+
         GitHubUserEntity newUser = GitHubUserEntity.builder()
                 .username(dto.getLogin())
+                .dirPath(dirName)
                 .userId(dto.getId())
                 .userNodeId(dto.getNode_id()).build();
 
