@@ -1,0 +1,2 @@
+spring.application.name: githubapiserver
+APPLICATION_DIRECTORY_PATH: ./src/main/java/com/example/githubapiserver
