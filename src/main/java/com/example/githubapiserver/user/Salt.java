@@ -15,20 +15,20 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-@Table
-@Entity
-@SoftDelete(columnName = "deleted_at")
-@EntityListeners(AuditingEntityListener.class)  // Auditing 기능을 활성화
+//@Table
+//@Entity
+//@SoftDelete(columnName = "deleted_at")
+//@EntityListeners(AuditingEntityListener.class)  // Auditing 기능을 활성화
 public class Salt {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(unique = true)
+//    @Column(unique = true)
     private Long userId;
 
-    @Column
+//    @Column
     private String salt;
 
     @CreatedDate
@@ -37,7 +37,7 @@ public class Salt {
     @LastModifiedDate
     private LocalDateTime updatedAt;
 
-    @Column
+//    @Column
     private LocalDateTime deletedAt;
 
     public static String initSalt() {
