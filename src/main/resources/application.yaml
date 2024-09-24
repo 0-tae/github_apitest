@@ -1,2 +1,18 @@
-spring.application.name: githubapiserver
-APPLICATION_DIRECTORY_PATH: ./src/main/java/com/example/githubapiserver
+
+spring:
+  application:
+    name: githubapiserver
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3303/baek2thefuture
+    username: root
+    password: baek2thefuture123!
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+#LLM_SERVER_CONFIG:
+#  HOST: https://0261-168-188-129-198.ngrok-free.app/llm/api/v1/query
+#  SERVER_AVAILABLE: false
+#
+#APPLICATION_DIRECTORY_PATH: ./src/main/java/com/example/githubapiserver
