@@ -1,7 +1,7 @@
 package com.example.githubapiserver.config;
 
 
-import com.example.githubapiserver.scripts.ScriptExecutor;
+import com.example.githubapiserver.domain.webhook.scripts.ScriptExecutor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
